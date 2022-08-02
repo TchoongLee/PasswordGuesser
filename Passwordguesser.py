@@ -5,7 +5,7 @@ import sys
 import itertools
 
 
-chaine=["nicolas", "boulanikian", "78"]
+chaine=["mot1", "mot2", "mot3"]
 LEET_1_TRANSLATIONS = str.maketrans('oOaAeEiIsS', '0044331155')
 LEET_2_TRANSLATIONS = str.maketrans('oOaA', '00@@')
 LEET_3_TRANSLATIONS = str.maketrans('oOaAiIeE', '00@@!!$$')
