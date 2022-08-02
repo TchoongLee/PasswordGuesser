@@ -7,7 +7,7 @@ import itertools
 
 #########################MODIFIABLE###########################
 #chaine de base avec les 1 à 4 mots clefs
-chaine=["nicolas", "boulanikian","78", "gay"]
+chaine=["word1","word2","word3"]
 #chaine qui s'ajoute a la fin de chaque mdp generé
 wordappend=""
 #chaine qui s'ajoute au debut de chaque mdp generé
