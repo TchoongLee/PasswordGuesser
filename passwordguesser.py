@@ -7,7 +7,7 @@ import itertools
 
 #########################MODIFIABLE###########################
 #chaine de base avec les 1 à 4 mots clefs
-chaine=["word1","word2","word3"]
+chaine=["sabine", "herbin","92"]
 #chaine qui s'ajoute a la fin de chaque mdp generé
 wordappend=""
 #chaine qui s'ajoute au debut de chaque mdp generé
@@ -152,12 +152,21 @@ else:
 outputfinal2=[]
 
 
-# on convertit la liste outputfinal en vrai mot collés (outputfinal2)
+# on convertit la liste outputfinal en (outputfinal2) bien parsé.
 for t in outputfinal:
     
     t = str(t).replace("(", "").replace(")", "").replace("'", "").replace(",", "").replace(" ", "").replace("[", "").replace("]", "")
     t = (wordprepend+t+wordappend)
+
+
+    parsing_2 = str(t)+"*"
+    parsing_3 = str(t)+"!"
+    parsing_4 = str(t)+"$"
+
     outputfinal2.append(t)
+    outputfinal2.append(parsing_2)
+    outputfinal2.append(parsing_3)
+    outputfinal2.append(parsing_4)
 
 f = open("output.txt", "w")
 
